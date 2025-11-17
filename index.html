@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampilan Screenshot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .image-container {
+            width: 90%; 
+            max-width: 1200px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .responsive-image {
+            width: 100%; 
+            height: auto;
+            display: block; 
+        }
+
+        @media (max-width: 600px) {
+            .image-container {
+                width: 95%; 
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="gambar.png" alt="Screenshot WhatsApp" class="responsive-image">
+    </div>
+</body>
+</html>
